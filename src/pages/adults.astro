@@ -1,0 +1,117 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Adults Track - Learn AI">
+  <section class="hero">
+    <div class="container">
+      <span class="hero-badge">💼 Adults Track</span>
+      <h1>AI Development for <span class="gradient">Adults</span></h1>
+      <p class="lead">A comprehensive track for adults (15+) who want to learn to build with AI tools. From basics to advanced projects.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <span class="section-label">Course Overview</span>
+      <h2 class="section-title">8 Modules</h2>
+      
+      <div class="modules-grid">
+        <div class="module-card">
+          <span class="module-num">1</span>
+          <div class="module-content">
+            <h3>AI Fundamentals</h3>
+            <p>Understanding AI, ML, and how language models work</p>
+          </div>
+        </div>
+        
+        <div class="module-card">
+          <span class="module-num">2</span>
+          <div class="module-content">
+            <h3>Setting Up Your Environment</h3>
+            <p>Install Ollama, VS Code, and essential tools</p>
+          </div>
+        </div>
+        
+        <div class="module-card">
+          <span class="module-num">3</span>
+          <div class="module-content">
+            <h3>HTML & CSS Basics</h3>
+            <p>Build beautiful websites from scratch</p>
+          </div>
+        </div>
+        
+        <div class="module-card">
+          <span class="module-num">4</span>
+          <div class="module-content">
+            <h3>JavaScript for Beginners</h3>
+            <p>Add interactivity to your websites</p>
+          </div>
+        </div>
+        
+        <div class="module-card">
+          <span class="module-num">5</span>
+          <div class="module-content">
+            <h3>Python Fundamentals</h3>
+            <p>Learn Python for AI integration</p>
+          </div>
+        </div>
+        
+        <div class="module-card">
+          <span class="module-num">6</span>
+          <div class="module-content">
+            <h3>Working with APIs</h3>
+            <p>Connect your apps to AI services</p>
+          </div>
+        </div>
+        
+        <div class="module-card">
+          <span class="module-num">7</span>
+          <div class="module-content">
+            <h3>Building Projects</h3>
+            <p>Portfolio, chatbot, and game projects</p>
+          </div>
+        </div>
+        
+        <div class="module-card">
+          <span class="module-num">8</span>
+          <div class="module-content">
+            <h3>Deployment & Sharing</h3>
+            <p>Put your projects online for free</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>🚀 Ready to Start?</h2>
+      <p>All resources are free! Start learning today.</p>
+      <a href="/kids" class="btn btn-primary">Start with Kids Track</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero { padding: 100px 0 60px; text-align: center; }
+  .hero-badge { display: inline-block; padding: 8px 16px; background: rgba(74,240,232,0.1); border: 1px solid rgba(74,240,232,0.3); border-radius: 100px; color: var(--accent-secondary); font-size: 12px; margin-bottom: 20px; }
+  .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 6vw, 60px); font-weight: 700; margin-bottom: 16px; }
+  .gradient { background: linear-gradient(135deg, var(--accent), var(--accent-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .lead { font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+
+  section { padding: 60px 0; }
+  .section-label { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-secondary); margin-bottom: 12px; display: block; text-align: center; }
+  .section-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(28px, 4vw, 40px); font-weight: 700; margin-bottom: 40px; text-align: center; }
+
+  .modules-grid { display: grid; gap: 16px; }
+  .module-card { display: flex; align-items: center; gap: 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 24px; transition: all 0.2s; }
+  .module-card:hover { border-color: var(--accent); }
+  .module-num { width: 48px; height: 48px; background: linear-gradient(135deg, var(--accent), var(--accent-secondary)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 18px; flex-shrink: 0; }
+  .module-content h3 { font-family: 'Space Grotesk', sans-serif; font-size: 16px; margin-bottom: 4px; }
+  .module-content p { color: var(--text-secondary); font-size: 14px; }
+
+  .cta { text-align: center; background: linear-gradient(135deg, rgba(255,107,157,0.1), rgba(74,240,232,0.1)); }
+  .cta h2 { font-family: 'Space Grotesk', sans-serif; font-size: 28px; margin-bottom: 12px; }
+  .cta p { color: var(--text-secondary); margin-bottom: 24px; }
+</style>
