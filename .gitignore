@@ -1,0 +1,16 @@
+# Local Netlify folder
+.netlify
+
+# Vercel
+.vercel
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist.zip
+
+# IDE
+.astro/
+.vscode/
