@@ -4,7 +4,7 @@
 
 ## 🌐 Live Site
 
-**https://learnai-guide.netlify.app**
+**https://learn-guide.vercel.app**
 
 ---
 
@@ -12,10 +12,10 @@
 
 | Template | Description | Live Demo |
 |----------|-------------|-----------|
-| 📄 Portfolio Basic | Clean portfolio, single HTML file | [portfolio-basic-template.netlify.app](https://portfolio-basic-template.netlify.app) |
-| 🤖 Portfolio AI | AI-powered portfolio with chatbot | [ai-portfolio-template.netlify.app](https://ai-portfolio-template.netlify.app) |
-| 🎮 Game Template | Simple browser game starter | [game-template-demo.netlify.app](https://game-template-demo.netlify.app) |
-| 💬 Chatbot Template | AI chatbot base | [chatbot-ai-template.netlify.app](https://chatbot-ai-template.netlify.app) |
+| 📄 Portfolio Basic | Clean portfolio, single HTML file | [portfolio-basic-woad.vercel.app](https://portfolio-basic-woad.vercel.app) |
+| 🤖 Portfolio AI | AI-powered portfolio with chatbot | [portfolio-ai-liart-seven.vercel.app](https://portfolio-ai-liart-seven.vercel.app) |
+| 🎮 Game Template | Simple browser game starter | [game-template-mocha.vercel.app](https://game-template-mocha.vercel.app) |
+| 💬 Chatbot Template | AI chatbot base | [chatbot-template-alpha.vercel.app](https://chatbot-template-alpha.vercel.app) |
 
 > All templates are single HTML files — no install needed. Download and open in any browser!
 
