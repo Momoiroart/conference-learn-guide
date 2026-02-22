@@ -15,6 +15,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- What you'll build -->
   <section>
     <div class="container">
       <span class="section-label">What You'll Build</span>
@@ -44,11 +45,74 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Templates preview -->
+  <section class="templates-section">
+    <div class="container">
+      <span class="section-label">Ready to Use</span>
+      <h2 class="section-title">Free Templates — Try Live Demos</h2>
+      <p class="section-desc">Download any template, open in your browser, and customize with AI. No install needed!</p>
+      <div class="template-previews">
+        <a href="https://portfolio-basic-template.netlify.app" target="_blank" rel="noopener" class="tpl-card">
+          <div class="tpl-icon">📄</div>
+          <h4>Portfolio Basic</h4>
+          <p>Animated portfolio, single HTML file</p>
+          <span class="tpl-link">Open demo →</span>
+        </a>
+        <a href="https://ai-portfolio-template.netlify.app" target="_blank" rel="noopener" class="tpl-card tpl-featured">
+          <div class="tpl-badge">⭐ Popular</div>
+          <div class="tpl-icon">🤖</div>
+          <h4>Portfolio AI</h4>
+          <p>Portfolio + AI chat widget</p>
+          <span class="tpl-link">Open demo →</span>
+        </a>
+        <a href="https://game-template-demo.netlify.app" target="_blank" rel="noopener" class="tpl-card">
+          <div class="tpl-icon">🎮</div>
+          <h4>Space Game</h4>
+          <p>Playable browser game starter</p>
+          <span class="tpl-link">Play demo →</span>
+        </a>
+        <a href="https://chatbot-ai-template.netlify.app" target="_blank" rel="noopener" class="tpl-card">
+          <div class="tpl-icon">💬</div>
+          <h4>Chatbot</h4>
+          <p>AI chatbot interface</p>
+          <span class="tpl-link">Open demo →</span>
+        </a>
+      </div>
+      <div style="text-align:center;margin-top:32px;">
+        <a href="/templates" class="btn btn-primary">See All Templates & Details →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Setup callout -->
+  <section class="ai-callout">
+    <div class="container">
+      <div class="callout-inner">
+        <div class="callout-text">
+          <span class="section-label">Free AI Tools</span>
+          <h2>Set Up Ollama + Claude Code</h2>
+          <p>Learn to use free AI tools to customize any template in minutes — no coding experience needed!</p>
+          <a href="/ai-setup" class="btn btn-primary" style="margin-top:20px;">AI Setup Guide →</a>
+        </div>
+        <div class="callout-steps">
+          <div class="mini-step"><span class="mini-num">1</span><span>Install Ollama (free local AI)</span></div>
+          <div class="mini-step"><span class="mini-num">2</span><span>Pick a template</span></div>
+          <div class="mini-step"><span class="mini-num">3</span><span>Tell AI what you want</span></div>
+          <div class="mini-step"><span class="mini-num">4</span><span>Deploy to Netlify for free!</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
   <section class="cta">
     <div class="container">
       <h2>Ready to Start?</h2>
-      <p>Join thousands of people learning to build with AI tools!</p>
-      <a href="/kids" class="btn btn-primary">Start Now - It's Free!</a>
+      <p>Everything is free. No sign-up needed to browse templates!</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="/kids" class="btn btn-primary">Start Learning - Free!</a>
+        <a href="/templates" class="btn btn-secondary">Browse Templates</a>
+      </div>
     </div>
   </section>
 </Layout>
@@ -60,19 +124,44 @@ import Layout from '../layouts/Layout.astro';
   .gradient { background: linear-gradient(135deg, var(--accent), var(--accent-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .lead { font-size: 18px; color: var(--text-secondary); max-width: 500px; margin-bottom: 32px; }
   .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
-  
+
   section { padding: 80px 0; }
   .section-label { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-secondary); margin-bottom: 12px; display: block; }
-  .section-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(28px, 4vw, 40px); font-weight: 700; margin-bottom: 40px; }
-  
-  .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+  .section-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(28px, 4vw, 40px); font-weight: 700; margin-bottom: 16px; }
+  .section-desc { color: var(--text-secondary); font-size: 16px; margin-bottom: 36px; }
+
+  .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 24px; }
   .feature-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; padding: 32px; transition: all 0.3s; }
   .feature-card:hover { transform: translateY(-6px); border-color: var(--accent); }
   .feature-icon { font-size: 40px; display: block; margin-bottom: 16px; }
   .feature-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 18px; margin-bottom: 10px; }
   .feature-card p { color: var(--text-secondary); font-size: 14px; }
-  
-  .cta { text-align: center; background: linear-gradient(135deg, rgba(255,107,157,0.1), rgba(74,240,232,0.1)); }
+
+  /* Templates section */
+  .template-previews { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 8px; }
+  .tpl-card { display: block; background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; padding: 24px; text-decoration: none; color: inherit; transition: all 0.25s; position: relative; }
+  .tpl-card:hover { transform: translateY(-4px); border-color: rgba(255,107,157,0.35); }
+  .tpl-card.tpl-featured { border-color: rgba(168,85,247,0.35); }
+  .tpl-badge { position: absolute; top: 14px; right: 14px; background: linear-gradient(135deg, var(--accent), var(--violet)); color: #fff; font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 100px; }
+  .tpl-icon { font-size: 40px; margin-bottom: 12px; display: block; }
+  .tpl-card h4 { font-family: 'Space Grotesk', sans-serif; font-size: 16px; margin-bottom: 6px; }
+  .tpl-card p { color: var(--text-secondary); font-size: 13px; margin-bottom: 14px; }
+  .tpl-link { font-size: 13px; color: var(--accent); font-weight: 600; }
+
+  /* AI callout */
+  .ai-callout { background: rgba(168,85,247,0.05); border-top: 1px solid rgba(168,85,247,0.1); border-bottom: 1px solid rgba(168,85,247,0.1); }
+  .callout-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+  .callout-text h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(22px, 3vw, 32px); margin-bottom: 12px; }
+  .callout-text p { color: var(--text-secondary); line-height: 1.7; }
+  .callout-steps { display: grid; gap: 12px; }
+  .mini-step { display: flex; align-items: center; gap: 14px; font-size: 15px; color: var(--text-secondary); }
+  .mini-num { width: 30px; height: 30px; background: linear-gradient(135deg, var(--accent), var(--violet)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 13px; color: #fff; flex-shrink: 0; }
+
+  .cta { text-align: center; background: linear-gradient(135deg, rgba(255,107,157,0.08), rgba(74,240,232,0.08)); }
   .cta h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(28px, 4vw, 40px); margin-bottom: 16px; }
   .cta p { color: var(--text-secondary); margin-bottom: 32px; }
+
+  @media (max-width: 700px) {
+    .callout-inner { grid-template-columns: 1fr; }
+  }
 </style>
