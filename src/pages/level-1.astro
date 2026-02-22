@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Level 1 - What is AI?">
+  <section class="hero">
+    <div class="container">
+      <span class="hero-badge">Level 1</span>
+      <h1>What is <span class="gradient">Artificial Intelligence</span>?</h1>
+      <p class="lead">AI is like having a really smart robot friend that can learn and think!</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container">
+      <div class="lesson-card">
+        <h2>🤖 What is AI?</h2>
+        <p>Artificial Intelligence (AI) is when computers can think and learn like humans. It's like teaching a robot to be smart!</p>
+      </div>
+
+      <div class="lesson-card">
+        <h2>🧠 How Does AI Learn?</h2>
+        <p>AI learns by seeing lots and lots of examples - kind of like how you learn by practicing!</p>
+        <div class="examples">
+          <div class="example">
+            <span class="emoji">🖼️</span>
+            <h4>See Pictures</h4>
+            <p>AI looks at thousands of cat photos and learns what cats look like!</p>
+          </div>
+          <div class="example">
+            <span class="emoji">📖</span>
+            <h4>Read Text</h4>
+            <p>AI reads lots of books and learns how to write sentences!</p>
+          </div>
+          <div class="example">
+            <span class="emoji">🎮</span>
+            <h4>Play Games</h4>
+            <p>AI plays games millions of times and learns the best moves!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h2>💡 Fun Facts About AI</h2>
+        <ul class="facts">
+          <li>🤖 The first AI was created in the 1950s!</li>
+          <li>🎮 AI can beat humans at chess, Go, and video games!</li>
+          <li>🎨 AI can create art, music, and write stories!</li>
+          <li>🚗 Self-driving cars use AI to drive safely!</li>
+        </ul>
+      </div>
+
+      <div class="navigation">
+        <a href="/kids" class="btn btn-secondary">← Back</a>
+        <a href="/level-2" class="btn btn-primary">Next: Meet Ollama →</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero { padding: 80px 0 40px; text-align: center; }
+  .hero-badge { display: inline-block; padding: 8px 16px; background: rgba(74,240,232,0.1); border: 1px solid rgba(74,240,232,0.3); border-radius: 100px; color: var(--accent-secondary); font-size: 12px; margin-bottom: 20px; }
+  .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 6vw, 56px); font-weight: 700; margin-bottom: 16px; }
+  .gradient { background: linear-gradient(135deg, var(--accent), var(--accent-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .lead { font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+
+  .content { padding: 40px 0 80px; }
+  .lesson-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; padding: 32px; margin-bottom: 24px; }
+  .lesson-card h2 { font-family: 'Space Grotesk', sans-serif; font-size: 22px; margin-bottom: 16px; }
+  .lesson-card p { color: var(--text-secondary); line-height: 1.8; }
+
+  .examples { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-top: 20px; }
+  .example { background: var(--bg-secondary); border-radius: 12px; padding: 20px; text-align: center; }
+  .emoji { font-size: 36px; display: block; margin-bottom: 12px; }
+  .example h4 { font-size: 14px; margin-bottom: 8px; }
+  .example p { font-size: 13px; }
+
+  .facts { list-style: none; margin-top: 16px; }
+  .facts li { padding: 12px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+  .facts li:last-child { border-bottom: none; }
+  .facts li::before { content: "✨ "; }
+
+  .navigation { display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; }
+</style>

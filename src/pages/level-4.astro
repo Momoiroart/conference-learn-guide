@@ -1,0 +1,121 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Level 4 - Portfolio Tips">
+  <section class="hero">
+    <div class="container">
+      <span class="hero-badge">Level 4</span>
+      <h1>Make Your <span class="gradient">Portfolio Amazing</span></h1>
+      <p class="lead">Learn tips and tricks to make your portfolio website stand out!</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container">
+      <div class="lesson-card">
+        <h2>🎯 What is a Portfolio?</h2>
+        <p>A portfolio is like a digital showcase of your work. It's a website where you show who you are, what you're good at, and cool projects you've made.</p>
+      </div>
+
+      <div class="lesson-card">
+        <h2>✨ Tips for an Amazing Portfolio</h2>
+        <div class="tips">
+          <div class="tip">
+            <span class="tip-icon">🎨</span>
+            <div><h4>Pick Your Colors</h4><p>Choose 2-3 colors that match your personality!</p></div>
+          </div>
+          <div class="tip">
+            <span class="tip-icon">📸</span>
+            <div><h4>Add Photos</h4><p>Include screenshots of your projects!</p></div>
+          </div>
+          <div class="tip">
+            <span class="tip-icon">📝</span>
+            <div><h4>Write Clearly</h4><p>Keep text short and easy to read!</p></div>
+          </div>
+          <div class="tip">
+            <span class="tip-icon">🔗</span>
+            <div><h4>Add Links</h4><p>Link to your GitHub and social media!</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-card">
+        <h2>🎮 Add Fun Elements</h2>
+        <p>Make your portfolio interactive!</p>
+        <ul class="ideas">
+          <li>✨ Animations - smooth transitions when scrolling</li>
+          <li>🎯 Hover Effects - cards that lift up</li>
+          <li>💬 AI Chat - add a chatbot that answers questions</li>
+          <li>🌟 Custom Cursor - replace the normal pointer</li>
+        </ul>
+      </div>
+
+      <div class="lesson-card">
+        <h2>🚀 Ready-Made Templates</h2>
+        <p>Don't want to start from scratch? Use our free templates!</p>
+        <div class="templates">
+          <div class="template"><h4>📄 Portfolio Basic</h4><p>Simple portfolio</p></div>
+          <div class="template"><h4>🤖 Portfolio AI</h4><p>With chatbot</p></div>
+          <div class="template"><h4>🎮 Game Template</h4><p>Space shooter</p></div>
+          <div class="template"><h4>💬 Chatbot Template</h4><p>AI assistant</p></div>
+        </div>
+        <p class="note">Get them at: <code>github.com/Momoiroart/conference-portfolio-builder</code></p>
+      </div>
+
+      <div class="lesson-card celebration">
+        <h2>🎉 Congratulations!</h2>
+        <p>You've completed the Kids AI Learning Track!</p>
+        <p>You now know:</p>
+        <ul>
+          <li>What AI is and how it works</li>
+          <li>How to use Ollama</li>
+          <li>How to build a website</li>
+          <li>How to create an amazing portfolio</li>
+        </ul>
+        <p>Keep learning and building! 🚀</p>
+      </div>
+
+      <div class="navigation">
+        <a href="/level-3" class="btn btn-secondary">← Previous: First Project</a>
+        <a href="/" class="btn btn-primary">Back to Home →</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero { padding: 80px 0 40px; text-align: center; }
+  .hero-badge { display: inline-block; padding: 8px 16px; background: rgba(74,240,232,0.1); border: 1px solid rgba(74,240,232,0.3); border-radius: 100px; color: var(--accent-secondary); font-size: 12px; margin-bottom: 20px; }
+  .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 6vw, 56px); font-weight: 700; margin-bottom: 16px; }
+  .gradient { background: linear-gradient(135deg, var(--accent), var(--accent-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .lead { font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+
+  .content { padding: 40px 0 80px; }
+  .lesson-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; padding: 32px; margin-bottom: 24px; }
+  .lesson-card h2 { font-family: 'Space Grotesk', sans-serif; font-size: 22px; margin-bottom: 16px; }
+  .lesson-card p { color: var(--text-secondary); line-height: 1.8; }
+
+  .tips { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-top: 20px; }
+  .tip { display: flex; gap: 12px; align-items: start; }
+  .tip-icon { font-size: 24px; }
+  .tip h4 { font-size: 14px; margin-bottom: 4px; }
+  .tip p { font-size: 13px; }
+
+  .ideas { list-style: none; margin-top: 16px; }
+  .ideas li { padding: 10px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+  .ideas li::before { content: "➜ "; color: var(--accent); }
+
+  .templates { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 16px; }
+  .template { background: var(--bg-secondary); border-radius: 12px; padding: 16px; }
+  .template h4 { font-size: 14px; margin-bottom: 4px; }
+  .template p { font-size: 12px; }
+  .note { font-size: 13px; color: var(--text-secondary); margin-top: 16px; }
+  .note code { background: var(--bg-primary); padding: 4px 8px; border-radius: 4px; color: var(--accent); }
+
+  .celebration { background: linear-gradient(135deg, rgba(255,107,157,0.15), rgba(74,240,232,0.15)); border-color: var(--accent); text-align: center; }
+  .celebration ul { display: inline-block; text-align: left; list-style: none; margin: 16px 0; }
+  .celebration li { padding: 8px 0; color: var(--text-secondary); }
+
+  .navigation { display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; }
+</style>
