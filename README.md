@@ -1,80 +1,76 @@
-# Learn Guide
+# Learn AI — Free AI Learning Guide
 
-> A tutorial website for learning to build with free AI tools.
+> A tutorial website teaching anyone (kids, teens, adults) how to build with free AI tools like Ollama and Claude Code.
 
-## 🌐 Website
+## 🌐 Live Site
 
-Learn AI at: (deploy to Netlify/Vercel)
+**https://learnai-guide.netlify.app**
 
-## 📚 Content
+---
 
-### Kids Track (Ages 10-14)
-- **Level 1**: What is AI?
-- **Level 2**: Meet Ollama
-- **Level 3**: Your First Project
-- **Level 4**: Portfolio Tips
+## 🧰 Free Templates — Try them live!
 
-### Adults Track (Ages 15+)
-- **Module 1**: AI Fundamentals
-- **Module 2**: Setting Up Your Environment
-- **Module 3**: HTML & CSS Basics
-- **Module 4**: JavaScript for Beginners
-- **Module 5**: Python Fundamentals
-- **Module 6**: Working with APIs
-- **Module 7**: Building Projects
-- **Module 8**: Deployment & Sharing
+| Template | Description | Live Demo |
+|----------|-------------|-----------|
+| 📄 Portfolio Basic | Clean portfolio, single HTML file | [portfolio-basic-template.netlify.app](https://portfolio-basic-template.netlify.app) |
+| 🤖 Portfolio AI | AI-powered portfolio with chatbot | [ai-portfolio-template.netlify.app](https://ai-portfolio-template.netlify.app) |
+| 🎮 Game Template | Simple browser game starter | [game-template-demo.netlify.app](https://game-template-demo.netlify.app) |
+| 💬 Chatbot Template | AI chatbot base | [chatbot-ai-template.netlify.app](https://chatbot-ai-template.netlify.app) |
+
+> All templates are single HTML files — no install needed. Download and open in any browser!
+
+---
+
+## 📚 Learning Tracks
+
+### 🎯 Kids Track (Ages 10–14)
+| Level | Topic |
+|-------|-------|
+| Level 1 | What is AI? |
+| Level 2 | Meet Ollama |
+| Level 3 | Your First Project |
+| Level 4 | Portfolio Tips |
+
+### 💼 Adults Track (Ages 15+)
+| Module | Topic |
+|--------|-------|
+| 1 | AI Fundamentals |
+| 2 | Setting Up Your Environment |
+| 3 | HTML & CSS Basics |
+| 4 | JavaScript for Beginners |
+| 5 | Python Fundamentals |
+| 6 | Working with APIs |
+| 7 | Building Projects |
+| 8 | Deployment & Sharing |
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Astro** - Static site generator
-- **Tailwind CSS** - Styling
-- **Netlify/Vercel** - Hosting (free)
+| Tool | Purpose |
+|------|---------|
+| Astro | Static site generator |
+| Outfit + Space Grotesk | Fonts |
+| Netlify | Free hosting |
 
-## 🚀 Development
+## 🚀 Run Locally
 
 ```bash
-# Install dependencies
 npm install
-
-# Start dev server
-npm run dev
-
-# Build for production
-npm run build
-```
-
-## 📁 Structure
-
-```
-learn-guide/
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       ├── index.astro          # Homepage
-│       ├── adults/
-│       │   └── index.astro      # Adults track
-│       └── kids/
-│           ├── index.astro      # Kids track
-│           ├── level-1-ai-basics.astro
-│           ├── level-2-ollama.astro
-│           ├── level-3-first-project.astro
-│           └── level-4-portfolio.astro
-├── public/
-├── package.json
-└── README.md
+npm run dev       # http://localhost:4321
+npm run build     # Build to dist/
 ```
 
 ## 🎨 Design
 
-- Dark theme with pink/cyan accents
-- Custom cursor effects
-- Animated backgrounds
-- Responsive design
+- Algorithmics-inspired dark theme
+- Animated floating orbs background + grid overlay
+- Pink / violet / cyan color palette
+- Glassmorphism cards, gradient buttons
 
 ## 📝 License
 
-MIT
+MIT — Use it however you like!
 
 ---
 
